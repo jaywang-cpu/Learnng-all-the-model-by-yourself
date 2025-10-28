@@ -5,6 +5,7 @@
 * Predictive Positive Value(PPN): TP/(TP+FP): Actual positive rate among predicted positives.
 * Negative Predictive Value(NPV): TN/(TN+FN): Actual negative rate among predicted negatives.
 
+![](https://github.com/jaywang-cpu/Learnng-all-the-model-by-yourself/blob/main/figure/Algorithms/TP%20FP%20TN%20FN.png)
 Conclusion:竖实际，横预测；敏感病人，特异健康
 
 
