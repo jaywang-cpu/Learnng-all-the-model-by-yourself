@@ -8,4 +8,4 @@ I am a beginner in machine learning, deep learning, and other algorithms, but I 
 * **Algorithms**：**[Top1]** *Logistic Regression*, *Random Forest*, *Convolutional Neural Network(CNN)*, *U-Net*, *XGBoost*.
 **[Top2]** *SVM*, *ResNet*, *LSTM*, *GCN*, *Vison Transformer*, *Gradient Boosting*. **[Top3]** *GAT*, *3D CNN*, *Multi-Modal Fusion*, *Attention U-Net*, *EfficientNet*, *BERT for Medical*. **[Top4]** *K-means*, *PCA*, *t-SNE/UMAP*, *Autoencoder*, *VAE*, *GAN*.
 
-![alt文字]()
+![](https://github.com/jaywang-cpu/Learnng-all-the-model-by-yourself/blob/main/figure/Algorithms/Beautiful%20Picture.png)
