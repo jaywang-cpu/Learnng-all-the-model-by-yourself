@@ -7,3 +7,5 @@ I am a beginner in machine learning, deep learning, and other algorithms, but I 
 * **Kits**：*Pytorch* (Machine learning master), *Scikit-learn* (Machine learning master), *Numpy* (Master in calculating), *Panda* (Exceel Pro), *Matplotlib* (Function like ps), *Seaborn* (The fliter of instagram)， *Simpletk/itk* (master in medical processing)， *Nibabel* (master in neural imaging processing), *OpenCV* ( Multi-functional imaging kits)
 * **Algorithms**：**[Top1]** *Logistic Regression*, *Random Forest*, *Convolutional Neural Network(CNN)*, *U-Net*, *XGBoost*.
 **[Top2]** *SVM*, *ResNet*, *LSTM*, *GCN*, *Vison Transformer*, *Gradient Boosting*. **[Top3]** *GAT*, *3D CNN*, *Multi-Modal Fusion*, *Attention U-Net*, *EfficientNet*, *BERT for Medical*. **[Top4]** *K-means*, *PCA*, *t-SNE/UMAP*, *Autoencoder*, *VAE*, *GAN*.
+
+![alt文字]()
