@@ -56,17 +56,20 @@ Gini index is computationally faster (no logarithms) and ranges from 0 to 0.5 fo
 | **Feature Bias(特征偏向)** | 偏爱"选项多"的特征 | 比如选择"城市"而不是"性别" | 可能选错重要特征 |
 | **Missing Values Handling(缺失值处理)** | 有些数据空白怎么办 | 用其他方法填补或单独处理 | 让算法更实用 |
 
+------------------------------------
 ## D：Advantage and Disadvantage
 
 | 方面 | 内容 |
 |------|------|
-| **优点** | • **易理解*：树状结构直观，可视化效果好• **无需预处理*：不用标准化，能处理数值和类别特征• **自动特征选择*：会选择重要特征分裂• **处理缺失值*：算法本身能处理缺失数据• **速度快*：训练和预测都比较快 |
-| **缺点** | • **容易过拟合*：特别是树很深时• **不稳定*：数据小变化可能导致树结构大变化• **有偏向*：倾向于选择取值多的特征• **难处理连续关系*：对线性关系表现不好 |
-| **适合场景** | • **数据有明确分类规则*• **需要解释性强的模型*• **特征是离散的或可离散化*•**数据量中等规模*• **对准确率要求不极高* |
-| **不适合场景** | • **数据有复杂线性关系*• **高维稀疏数据*• **需要极高精度的任务* |
+| **优点** | • *易理解*：树状结构直观，可视化效果好• *无需预处理*：不用标准化，能处理数值和类别特征• *自动特征选择*：会选择重要特征分裂• *处理缺失值*：算法本身能处理缺失数据• *速度快*：训练和预测都比较快 |
+| **缺点** | • *容易过拟合*：特别是树很深时• *不稳定*：数据小变化可能导致树结构大变化• *有偏向*：倾向于选择取值多的特征• *难处理连续关系*：对线性关系表现不好 |
+| **适合场景** | • *数据有明确分类规则*• *需要解释性强的模型*• *特征是离散的或可离散化*•*数据量中等规模*• *对准确率要求不极高* |
+| **不适合场景** | • *数据有复杂线性关系*• *高维稀疏数据*• *需要极高精度的任务* |
 
+
+------------------------------------
 ## E：Every Detailed Steps 
-# Decision Tree Code Implementation Steps Table
+### Decision Tree Code Implementation Steps Table
 
 | Phase | Step | Specific Tasks | Technical Points | Expected Output |
 |-------|------|----------------|------------------|-----------------|
@@ -108,16 +111,19 @@ Gini index is computationally faster (no logarithms) and ranges from 0 to 0.5 fo
 | | 10.3 | Performance testing | Time complexity, space complexity | Performance report |
 | | 10.4 | Comparison validation | Compare with sklearn results | Accuracy verification |
 
-## 📝 Key Milestone Checkpoints
+### Key Milestone Checkpoints (Extended)
 
-| Checkpoint | Validation Criteria | Pass Conditions |
-|------------|-------------------|-----------------|
-| **Data Preparation Complete** | Data quality check | No missing values, correct feature format |
-| **Core Algorithm Complete** | Algorithm logic verification | Information gain calculation correct |
-| **Model Construction Complete** | Tree structure check | Can generate decision tree normally |
-| **Prediction Function Complete** | Prediction accuracy | Training set accuracy >80% |
-| **Optimization Complete** | Performance improvement | Test set performance enhanced |
-| **Deployment Ready** | Completeness check | All functions working properly |
+| Checkpoint | Validation Criteria | Pass Conditions | Success Metrics | Quality Gates |
+|------------|-------------------|-----------------|-----------------|---------------|
+| **Data Preparation Complete** | Data quality check | No missing values, correct feature format | Data completeness >95% | Pass data validation pipeline |
+| **Core Algorithm Complete** | Algorithm logic verification | Information gain calculation correct | Mathematical accuracy verified | Unit tests pass 100% |
+| **Model Construction Complete** | Tree structure check | Can generate decision tree normally | Tree depth within reasonable range | Model builds without errors |
+| **Prediction Function Complete** | Prediction accuracy | Training set accuracy >80% | Baseline performance achieved | Predictions match expected format |
+| **Optimization Complete** | Performance improvement | Test set performance enhanced | Generalization gap <10% | Cross-validation scores stable |
+| **Deployment Ready** | Completeness check | All functions working properly | End-to-end pipeline functional | Production readiness checklist complete |
+| **Testing Validated** | Comprehensive testing | All test suites pass | Code coverage >90% | Performance benchmarks met |
+| **Documentation Complete** | Code documentation | All functions documented | API documentation available | User guide complete |
+
 
 
 
