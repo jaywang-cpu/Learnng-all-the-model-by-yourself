@@ -1,4 +1,4 @@
-# Decision Tree
+# Decision  
 
 ## A：Definition 
 Decision Tree is a supervised learning algorithm that creates a tree-like model of decisions to predict target values through recursive（递进的） binary splitting. 
