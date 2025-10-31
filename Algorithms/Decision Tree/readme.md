@@ -9,6 +9,9 @@ Just like a doctor's diagnosis: step by step narrowing down the possibilities ba
 * children node：those in the middle
 
 ## How to evalute it 
-### Entropy
-### Defintion
+### 1. Entropy
+#### Defintion
 we use entropy to quantify the similarity or difference in the node, stands for the chaosity within the node, more close to 0 more close to purity, 1 means half-half possibility which have the most impurity.
+
+The easiest way to calculate it :https://www.youtube.com/watch?v=YtebGVx-Fxw (very easy to understand)
+![](https://github.com/jaywang-cpu/Learnng-all-the-model-by-yourself/blob/main/figure/Algorithms/Entropy.jpg)
