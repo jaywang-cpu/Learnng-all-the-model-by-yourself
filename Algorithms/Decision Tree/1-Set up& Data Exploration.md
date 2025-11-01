@@ -21,12 +21,12 @@ import graphviz #输出高质量的文档，输出的图片最好
 from sklearn.tree import export_graphviz
 
 # Other utilities
-import pickle
-import warnings
-warnings.filterwarnings('ignore')
+import pickle  # 保存/加载训练好的决策树模型
+import warnings #保持输出整洁，专注于重要信息
+warnings.filterwarnings('ignore') #保持输出整洁，专注于重要信息
 
 # Set random seed for reproducibility
-np.random.seed(42)
+np.random.seed(42) #是为了让不同的人跑你的代码，得出来的准确度都是一样的，里面其实可以是任何数字，选择42其实是程序员的浪漫，"生命、宇宙以及一切的答案是42"
 ```
 ## Copy it Directly Into Your Book
 ```
