@@ -15,7 +15,7 @@
 'NaN'(字符串），""(空字符串），'0'，'False(布尔值）'
 ```
 
-## 1.2 df.isnull() 
+## 1.2 df.isnull()，df.isna()
 ```
 # 统计缺失值，返回布尔值：True=缺失，False=不缺失
 # df.isnull().sum() 每一行的缺失值，输出的是个数
