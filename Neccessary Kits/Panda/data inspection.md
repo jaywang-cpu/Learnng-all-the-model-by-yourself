@@ -20,6 +20,7 @@
 # 统计缺失值，返回布尔值：True=缺失，False=不缺失
 # df.isnull().sum() 每一行的缺失值，输出的是个数
 # df.isnull().sum().sum() 所有缺失的值，输出的是个数
+# 如何处理缺失值，请查看 missing value handing
 
 df = pd.DataFrame({
     'A': [1, np.nan, 3],
@@ -49,7 +50,8 @@ print(df.notnull())
 ## 4.df.duplicated()
 ```
 #检测有没有重复行的，输出的是布尔值
-#df.duplicated().sum() 检测出总共有多少重复
+#df（改都是改这里的）.duplicated().sum() 检测出总共有多少重复
+#result = df（改都是改这里哦）.drop_duplicates()
 df2 = pd.DataFrame({
     'A': [1, 2, 1, 3],
     'B': [4, 5, 4, 6]
@@ -60,6 +62,23 @@ print(df2.duplicated())
 # 1    False  # 唯一行
 # 2     True  # 重复行！
 # 3    False  # 唯一行
+============================drop_duplicates()
+print("原始数据:")
+print(df)
+#    A  B
+# 0  1  4  ← 第一次出现[1,4]
+# 1  2  5  ← 唯一行
+# 2  1  4  ← 重复[1,4] - 会被删除
+# 3  3  6  ← 唯一行  
+# 4  1  4  ← 重复[1,4] - 会被删除
+
+print("\n删除重复后:")
+result = df.drop_duplicates()
+print(result)
+#    A  B
+# 0  1  4  ← 保留第一个[1,4]
+# 1  2  5  ← 保留唯一行
+# 3  3  6  ← 保留唯一行
 ```
 
 ## 5.df.value_counts()
