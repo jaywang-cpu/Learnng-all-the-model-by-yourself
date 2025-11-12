@@ -35,4 +35,4 @@ k-Nearest Neighbors 是一种基于实例的监督学习算法，通过寻找K�
 ### 最后判决（Final Decision)
 - 分类任务：多数投票（Majority Voting）：5个里面3个垃圾邮件-预测为垃圾邮件
 - 回归任务：取平均值（Average）：3个邻居，1-300w，2-320w，3-280w，那么这个新数据取平均值就行
-- 
+  
