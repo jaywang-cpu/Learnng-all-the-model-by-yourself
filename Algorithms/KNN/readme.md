@@ -69,14 +69,14 @@ def euclidean_distance(point1, point2):
     return np.sqrt(np.sum((np.array(point1) - np.array(point2))**2))
 
 class KNNClassifier:
-    def __init__(self, k=3):
+    def __init__(self, k=3): #就像对一个手机的初始设置，这个是python语法规定，类的第一个参数必须是self
         """
         初始化KNN分类器
         参数: k - 邻居个数
         """
-        self.k = k
+        self.k = k   #把外面传进来的k存储到self k中
         
-    def fit(self, X_train, y_train):
+    def fit(self, X_train, y_train):       #fit就是教学过程，学习规律，存储数据
         """训练KNN（实际上只是存储数据）"""
         self.X_train = np.array(X_train) #这里的X-train 存储的是坐标
         self.y_train = np.array(y_train) #这里的Y-train 存储的是类别
@@ -91,17 +91,17 @@ class KNNClassifier:
             distances.append((dist, self.y_train[i]))
         
         # 按距离排序，取前K个
-        distances.sort(key=lambda x: x[0])
-        neighbors = [label for _, label in distances[:self.k]]
+        distances.sort(key=lambda x: x[0]) #key 就是按照什么排序，lambda就是一个一次性函数，x[0]就是按照第一个元素排序
+        neighbors = [label for _, label in distances[:self.k]] 
         
         return neighbors
     
     def predict_single(self, test_point):
         """预测单个数据点"""
-        neighbors = self._get_neighbors(test_point)
+        neighbors = self._get_neighbors(test_point) #就相当于是已经定义了上面的test点了，就输出三个邻居的建议
         
         # 多数投票
-        prediction = Counter(neighbors).most_common(1)[0][0]
+        prediction = Counter(neighbors).most_common(1)[0][0] #选取获胜者
         return prediction
     
     def predict(self, X_test):
