@@ -18,3 +18,13 @@
 - 添加类方法：一次只能加一个，多个要打包（（a,b,c）） append,count, index, upper, split....
 - 计算类函数：多个参数直接传，只要一个括号就行 max(a,b,c), min, print, format
 - 问自己需要的一组数据（（）），还是多个独立的数据（）
+
+--------------------
+**bias，varience**
+- bias: 预估值与实际值的差别
+- varience：简单来说就是数据的离散程度，可以衡量模型的稳定性
+- over-fiting: 训练级贴合很好，测试级别下降很多
+- under-fitting:训练集贴合不好，测试级别也不好
+- bias和模型复杂度成正比，varience与模型的复杂度成反比
+
+![](
