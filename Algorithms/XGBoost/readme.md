@@ -59,6 +59,9 @@ from xgboost import XGBRegressor, XGBClassifier
 
 ---性能优化
 # 计算优化
+
+
+https://zhuanlan.zhihu.com/p/37730184
 [ ] n_jobs并行设置[ ] GPU加速 (tree_method='gpu_hist') ] 内存优化技巧
 # 大数据处理
 [ ] 增量学习[ ] 数据采样策略[ ] 分布式训练
