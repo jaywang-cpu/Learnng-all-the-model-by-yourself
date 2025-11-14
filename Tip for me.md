@@ -27,4 +27,4 @@
 - under-fitting:训练集贴合不好，测试级别也不好
 - bias和模型复杂度成正比，varience与模型的复杂度成反比
 
-![](
+![](https://github.com/jaywang-cpu/Learnng-all-the-model-by-yourself/blob/main/figure/Algorithms/Bias%20Vs%20Varience.png)
