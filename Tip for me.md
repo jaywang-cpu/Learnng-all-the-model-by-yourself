@@ -41,3 +41,12 @@ for category_column in categorical_columns:
         df[category_column] = df[category_column].fillna(df[category_column].mode()[0])<br>
 
 这就是将变量遍历所有列名，然后根据条件变量进行数据处理！ 所以变量名你自己随便命名
+
+--------------------
+** def 函数名(输入的东西, 调节选项1=默认值, 调节选项2=默认值):**
+    
+- 1. 拿到输入的东西
+- 2. 根据调节选项1 → 做相应处理
+- 3. 根据调节选项2 → 做相应处理
+- 4. ...
+-5. return 处理好的东西
