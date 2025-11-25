@@ -28,3 +28,8 @@
 - bias和模型复杂度成正比，varience与模型的复杂度成反比
 
 ![](https://github.com/jaywang-cpu/Learnng-all-the-model-by-yourself/blob/main/figure/Algorithms/Bias%20Vs%20Varience.png)
+
+--------------------
+**验证当前文件位置**
+print("当前工作目录:", os.getcwd())
+print("目录下的文件:", os.listdir('.'))
