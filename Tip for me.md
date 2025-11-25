@@ -35,9 +35,9 @@
 - print("目录下的文件:", os.listdir('.'))
 
 --------------------
-**for循环理解**
+**for循环理解**<br>
 for category_column in categorical_columns:
     if category_column != target_column:
-        df[category_column] = df[category_column].fillna(df[category_column].mode()[0])
+        df[category_column] = df[category_column].fillna(df[category_column].mode()[0])<br>
 
 这就是将变量遍历所有列名，然后根据条件变量进行数据处理！ 所以变量名你自己随便命名
