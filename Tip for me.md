@@ -31,5 +31,5 @@
 
 --------------------
 **验证当前文件位置**
-print("当前工作目录:", os.getcwd())
-print("目录下的文件:", os.listdir('.'))
+- print("当前工作目录:", os.getcwd())
+- print("目录下的文件:", os.listdir('.'))
