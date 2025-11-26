@@ -11,3 +11,30 @@ I am a beginner in machine learning, deep learning, and other algorithms, but I 
 ![](https://github.com/jaywang-cpu/Learnng-all-the-model-by-yourself/blob/main/figure/Algorithms/Beautiful%20Picture.png)
 
 
+## 写代码的流程和原则
+- 大体框架
+问题定义 → 需求分析 → 系统设计 → 算法选择 → 编码实现 → 测试验证 → 优化迭代
+    ↑                                                        ↓
+    ←←←←←←←←←←←←←←←← 持续改进循环 ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
+
+- 内部框架
+1. 容器优先 - 先准备盒子，再装东西
+``` 
+# ❌ 错误思维：边想边装
+def preprocess_data(df):
+    # 直接开始处理，没有规划容器
+    df['age'] = df['age'].fillna(df['age'].mean())
+    # 后面发现需要记录处理信息，但没地方放...
+
+# ✅ 正确思维：先准备容器
+def preprocess_data(df):
+    # 1. 准备结果容器
+    processed_df = df.copy()
+    processing_log = []
+    encoders = {}
+    scalers = {}
+    
+    # 2. 再开始处理
+    # 现在有地方放所有东西了
+```
+
