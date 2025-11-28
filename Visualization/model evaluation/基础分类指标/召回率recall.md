@@ -1,10 +1,10 @@
-# Definition
+## Definition
 其实就是sensitive  TP/（TP+FN），简单些来说就是所有真正的病人，预测成功的概率是多少。
 
-# 实际意义
+## 实际意义
 高recall率其实就是典型害怕误诊，宁可错杀，不可放过。
 
-# 代码实现 
+## 代码实现 
 ```
 # 直接调用sklearn中的recall_score功能就行
 from sklearn.metrics import recall_score, classification_report, confusion_matrix
