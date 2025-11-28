@@ -27,5 +27,5 @@ mae = mean_absolute_error(y_true, y_pred)
 
 典型 = 考虑了风险的代表值
 例如：误差分布: [10, 10, 10, 10, 50]
-MAE = 20万   # 简单平均
+MAE = 20万   # 简单平均 <br>
 RMSE = 24万  # 考虑了那个50万的风险
