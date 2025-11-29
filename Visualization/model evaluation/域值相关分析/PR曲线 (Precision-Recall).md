@@ -21,6 +21,7 @@ Precision-Recall curve is a metric used to measure the performance of classifica
 4. Add baseline: Random classifier baseline = proportion of positive samples in dataset.
 
 ![](https://github.com/jaywang-cpu/Learnng-all-the-model-by-yourself/blob/main/figure/Algorithms/PR%20Curve.png)
+![](https://github.com/jaywang-cpu/Learnng-all-the-model-by-yourself/blob/main/figure/Algorithms/PR.png)
 
 ## How to use it
 | AP Score Range     | Test Quality Assessment         | Model Performance Description                    |
