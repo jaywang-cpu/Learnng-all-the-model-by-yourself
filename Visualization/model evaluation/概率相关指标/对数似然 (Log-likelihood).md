@@ -15,3 +15,39 @@ e.g.
 ## 公式使用
 - Log-Likelihood = Σ ln[P(观测i | 参数)]
 - 最佳参数 = argmax(Log-Likelihood)
+- 这个两个公式其实就是尝试了很多组合，返回log-likelihood最高时对应的概率
+```
+e.g.
+观测：抛硬币3次得到[正,正,反]
+测试不同的p值：
+p=0.5: 
+Log-Likelihood = ln(0.5) + ln(0.5) + ln(0.5) = -0.69 + (-0.69) + (-0.69) = -2.07
+p=0.6:
+Log-Likelihood = ln(0.6) + ln(0.6) + ln(0.4) = -0.51 + (-0.51) + (-0.92) = -1.94
+p=0.7:
+Log-Likelihood = ln(0.7) + ln(0.7) + ln(0.3) = -0.36 + (-0.36) + (-1.20) = -1.92 ← 最高！
+结论：最佳参数 p = 0.7
+```
+
+## 啥时候用
+只要你有数据，而且你想知道什么参数最能解释这些数据，就用log-likelihood。（一般可以用于置信区间，假设检验比较不同假设哪个更合理，逻辑回归找最佳权重参数，朴素贝叶斯估计各类别概率）
+
+## 代码实现
+```
+from sklearn.linear_model import LogisticRegression
+from sklearn.datasets import make_classification
+import numpy as np
+
+# 生成数据
+X, y = make_classification(n_samples=100, n_features=2, random_state=42)
+
+# 训练模型
+model = LogisticRegression()
+model.fit(X, y)
+
+# 计算log-likelihood
+y_prob = model.predict_proba(X)  # 获取概率
+log_likelihood = np.sum(y * np.log(y_prob[:, 1]) + (1-y) * np.log(y_prob[:, 0]))
+
+print(f"Log-Likelihood = {log_likelihood:.3f}")
+```
